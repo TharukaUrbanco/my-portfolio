@@ -7,3 +7,17 @@
     background-color: #1c2541;
   }
 }
+
+@layer components {
+  .light-white {
+    @apply text-white;
+  }
+}
+
+.dark-white {
+  @apply text-[#ccc9dc];
+}
+
+.light-orange {
+  @apply text-orange-600;
+}

@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Qualifications", url: "/qualifications" },
     { name: "Experience", url: "/experience" },
     { name: "Projects", url: "/projects" },
-    { name: "blogs", url: "https://www.linkedin.com/feed", isExternal: true },
+    { name: "Blogs", url: "https://www.linkedin.com/feed", isExternal: true },
   ];
 
   return (
@@ -28,12 +28,12 @@ const Navbar = () => {
         <div className="block md:hidden">
           <AlignJustify
             onClick={() => setIsOpen(true)}
-            className="h-[35px] w-[35px] text-white cursor-pointer"
+            className="h-[35px] w-[35px] -mt-[8px] text-white cursor-pointer"
           />
         </div>
         {isOpen && (
-          <div className="block md:hidden absolute left-0 top-0 w-full px-4 bg-[#2b3145] h-[320px]">
-            <div className="flex justify-start py-4">
+          <div className="block md:hidden absolute left-0 top-0 w-full px-4 bg-[#2b3145] h-[350px]">
+            <div className="flex justify-end pt-4 cursor-pointer">
               <X
                 onClick={() => setIsOpen(false)}
                 className="h-[35px] w-[35px] text-white"

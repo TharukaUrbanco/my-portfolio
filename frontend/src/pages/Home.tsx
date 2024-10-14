@@ -5,7 +5,8 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center">
           <img
             src="/images/myImage.png"
-            className="h-[350px] w-[350px] rounded-full object-contain border-[4px] border-orange-600"
+            className="h-[350px] w-[350px] xl:h-[400px] xl:w-[400px]
+            rounded-full object-contain border-[4px] border-orange-600"
           />
           <div className="mt-2">
             <div className="text-[16px] text-white">
