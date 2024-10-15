@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import Qualifications from "./pages/Qualifications";
 import Experience from "./pages/Experience";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 };
