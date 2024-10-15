@@ -6,3 +6,18 @@ export type Skill = {
   type: "frontend" | "backend" | "databse" | "languages" | "devops";
   years: number;
 };
+
+export type WorkExperience = {
+  id: number;
+  companyName: string;
+  designation: string;
+  duration: string;
+  location: string;
+  companyWebsiteURL: string;
+};
+
+export type Project = {
+  id: number;
+  title: string;
+  description: string;
+};

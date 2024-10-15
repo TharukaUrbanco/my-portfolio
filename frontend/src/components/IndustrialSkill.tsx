@@ -7,7 +7,12 @@ type IndustrialSkillProps = {
 
 const IndustrialSkill = ({ skill }: IndustrialSkillProps) => {
   return (
-    <div className="flex flex-row  border border-[#ccc9dc] p-3 rounded-2xl my-2 mx-2 cursor-pointer justify-between">
+    <div
+      className="
+        flex flex-row  border border-[#ccc9dc] p-3 rounded-2xl my-2 mx-2 cursor-pointer justify-between
+        hover:bg-[#2b3145]
+        "
+    >
       <div>
         <h5 className="text-[13px] light-white text-left">{skill.name}</h5>
         <p className="text-[10px] dark-white">{skill.years} years +</p>

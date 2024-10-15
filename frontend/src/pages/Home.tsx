@@ -11,11 +11,9 @@ const Home = () => {
           <div className="mt-2">
             <div className="text-[16px] text-white">
               Fullstack Software Developer{" "}
-              <span className="text-orange-600"> 6 years +</span>
+              <span className="text-orange-600"> 7 years +</span>
             </div>
-            <div className="text-[10px] text-white">
-              ( ASP.Net / React / React Native )
-            </div>
+            <div className="text-[10px] text-white">( ASP.Net / React )</div>
             <div className="text-[10px] text-white mt-2">
               BSc in Computer Science (USCS)
             </div>
@@ -29,17 +27,13 @@ const Home = () => {
           <p className="mt-10 text-md text-white">
             I’m Tharuka Deshan, a passionate software developer with a knack for
             crafting innovative solutions and a love for problem-solving. With
-            expertise in [list your key programming languages and technologies,
-            e.g., JavaScript, Python, React, etc.], I thrive on building
-            applications that not only meet client needs but also enhance user
-            experience.
+            expertise in ASP.NET and React, I thrive on building applications
+            that not only meet client needs but also enhance user experience.
           </p>
           <p className="mt-6 text-md text-white">
-            In this portfolio, you’ll find a collection of my projects, ranging
-            from [mention types of projects, e.g., web applications, mobile
-            apps, open-source contributions] to [specific technologies or
-            frameworks]. Each project reflects my commitment to quality,
-            efficiency, and continuous learning.
+            In this portfolio, you’ll find a collection of my projects and what
+            technologies i am expertised. Each project reflects my commitment to
+            quality, efficiency, and continuous learning.
           </p>
           <p className="mt-6 text-md text-white">
             I believe in the power of collaboration and am always eager to take

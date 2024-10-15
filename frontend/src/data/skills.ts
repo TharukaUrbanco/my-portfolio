@@ -7,7 +7,7 @@ export const skills: Skill[] = [
     rate: 98,
     priority: 1,
     type: "backend",
-    years: 6,
+    years: 7,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const skills: Skill[] = [
     rate: 98,
     priority: 2,
     type: "backend",
-    years: 6,
+    years: 7,
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const skills: Skill[] = [
     rate: 95,
     priority: 3,
     type: "backend",
-    years: 6,
+    years: 7,
   },
   {
     id: 4,
@@ -31,20 +31,20 @@ export const skills: Skill[] = [
     rate: 98,
     priority: 4,
     type: "backend",
-    years: 6,
+    years: 7,
   },
-  { id: 5, name: "WPF", rate: 85, priority: 5, type: "backend", years: 4 },
-  { id: 6, name: "Node.js", rate: 85, priority: 6, type: "backend", years: 4 },
+  { id: 5, name: "WPF", rate: 85, priority: 5, type: "backend", years: 5 },
+  { id: 6, name: "Node.js", rate: 85, priority: 6, type: "backend", years: 5 },
 
-  { id: 7, name: "React", rate: 90, priority: 7, type: "frontend", years: 4 },
-  { id: 8, name: "jQuery", rate: 90, priority: 8, type: "frontend", years: 6 },
+  { id: 7, name: "React", rate: 90, priority: 7, type: "frontend", years: 5 },
+  { id: 8, name: "jQuery", rate: 90, priority: 8, type: "frontend", years: 7 },
   {
     id: 9,
     name: "Bootstrap",
     rate: 95,
     priority: 9,
     type: "frontend",
-    years: 6,
+    years: 7,
   },
   {
     id: 10,
@@ -52,7 +52,7 @@ export const skills: Skill[] = [
     rate: 95,
     priority: 10,
     type: "frontend",
-    years: 3,
+    years: 4,
   },
 
   {
@@ -61,7 +61,7 @@ export const skills: Skill[] = [
     rate: 95,
     priority: 11,
     type: "databse",
-    years: 6,
+    years: 7,
   },
   {
     id: 12,
@@ -69,7 +69,7 @@ export const skills: Skill[] = [
     rate: 85,
     priority: 12,
     type: "databse",
-    years: 4,
+    years: 5,
   },
   {
     id: 13,
@@ -77,7 +77,7 @@ export const skills: Skill[] = [
     rate: 85,
     priority: 13,
     type: "databse",
-    years: 4,
+    years: 5,
   },
   {
     id: 14,
@@ -85,7 +85,7 @@ export const skills: Skill[] = [
     rate: 85,
     priority: 14,
     type: "databse",
-    years: 4,
+    years: 5,
   },
 
   {
@@ -94,7 +94,7 @@ export const skills: Skill[] = [
     rate: 85,
     priority: 14,
     type: "devops",
-    years: 4,
+    years: 5,
   },
   {
     id: 16,
@@ -102,7 +102,7 @@ export const skills: Skill[] = [
     rate: 95,
     priority: 16,
     type: "devops",
-    years: 6,
+    years: 7,
   },
   {
     id: 17,
@@ -126,6 +126,38 @@ export const skills: Skill[] = [
     rate: 95,
     priority: 19,
     type: "devops",
-    years: 6,
+    years: 7,
+  },
+  {
+    id: 20,
+    name: "C#",
+    rate: 95,
+    priority: 20,
+    type: "languages",
+    years: 7,
+  },
+  {
+    id: 21,
+    name: "Javascript",
+    rate: 95,
+    priority: 21,
+    type: "languages",
+    years: 7,
+  },
+  {
+    id: 22,
+    name: "SQL",
+    rate: 90,
+    priority: 22,
+    type: "languages",
+    years: 7,
+  },
+  {
+    id: 23,
+    name: "Java",
+    rate: 80,
+    priority: 23,
+    type: "languages",
+    years: 7,
   },
 ];

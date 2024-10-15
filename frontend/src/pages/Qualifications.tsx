@@ -27,9 +27,16 @@ const Qualifications = () => {
           <h2 className="text-3xl text-center">
             <span className="light-orange">Industrial</span>
             <span className="dark-white ml-2">Skills</span>
+            <span className="text-xl light-orange ml-2">( 7 years + )</span>
           </h2>
 
-          <div className="flex flex-row text-xl text-white mt-14">
+          <p className="max-w-[650px] mt-3 dark-white">
+            This collection highlights my commitment to evolving as a software
+            developer. Here, you will find a range of software development
+            skills, showcasing my proficiency in modern technologies.
+          </p>
+
+          <div className="flex flex-row text-xl text-white mt-10">
             Backend Development
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-2">
@@ -57,6 +64,17 @@ const Qualifications = () => {
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-2">
             {skills
               .filter((r) => r.type == "databse")
+              .map((r) => (
+                <IndustrialSkill key={r.id} skill={r} />
+              ))}
+          </div>
+
+          <div className="flex flex-row text-xl text-white mt-12">
+            Programming Languages
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-2">
+            {skills
+              .filter((r) => r.type == "languages")
               .map((r) => (
                 <IndustrialSkill key={r.id} skill={r} />
               ))}
