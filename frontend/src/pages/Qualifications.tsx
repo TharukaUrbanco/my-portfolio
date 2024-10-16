@@ -20,7 +20,7 @@ const Qualifications = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-4 mx-2">
+    <div className="flex flex-col mt-4 common-margin-x">
       <div className="">
         {/* Industrial Experience */}
         <div className="flex flex-col  justify-center items-center mt-10 md:mt-0">

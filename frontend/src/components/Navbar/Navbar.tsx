@@ -11,12 +11,12 @@ const Navbar = () => {
     { name: "Qualifications", url: "/qualifications" },
     { name: "Experience", url: "/experience" },
     { name: "Projects", url: "/projects" },
-    { name: "Blogs", url: "https://www.linkedin.com/feed", isExternal: true },
+    //{ name: "Blogs", url: "https://www.linkedin.com/feed", isExternal: true },
   ];
 
   return (
     <nav className="bg-[#1c2541]">
-      <div className=" flex flex-row justify-between px-8 py-5 items-center">
+      <div className=" flex flex-row justify-between common-margin-x py-5 items-center">
         <Logo />
         <div className="hidden md:block">
           <ul className="flex flex-row gap-4">

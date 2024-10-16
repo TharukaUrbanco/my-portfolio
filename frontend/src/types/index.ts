@@ -19,5 +19,10 @@ export type WorkExperience = {
 export type Project = {
   id: number;
   title: string;
+  duration: string;
   description: string;
+  type: "Work Related" | "Free Lancing" | "Education Purpose";
+  techSkillIds: number[];
+  relatedWorkExperienceId?: number;
+  responsibilities?: string[];
 };

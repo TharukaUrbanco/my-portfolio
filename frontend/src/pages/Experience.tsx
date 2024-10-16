@@ -3,7 +3,7 @@ import { workExperiences } from "../data/workExperiences";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col mt-4 mx-2">
+    <div className="flex flex-col mt-4 common-margin-x">
       <div className="flex flex-col  justify-center items-center mt-10 md:mt-0">
         <h2 className="text-3xl text-center">
           <span className="light-orange">Work</span>

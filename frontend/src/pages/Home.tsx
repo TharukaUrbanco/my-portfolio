@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen common-margin-x">
       <div className="grid md:grid-cols-2">
         <div className="flex flex-col items-center justify-center">
           <img
@@ -19,7 +19,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col px-6 justify-center">
+        <div className="flex flex-col justify-center">
           <h1 className="text-5xl text-white mt-10">
             <span className="text-orange-600">I’m thrilled</span> to have you
             here.
