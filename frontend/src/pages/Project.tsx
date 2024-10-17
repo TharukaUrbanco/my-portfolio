@@ -17,6 +17,7 @@ const Project = () => {
   useEffect(() => {
     if (project === undefined) {
       return navigate("/not-found");
+      //
     }
   }, [project, navigate]);
 
