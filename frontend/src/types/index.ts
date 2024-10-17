@@ -14,6 +14,7 @@ export type WorkExperience = {
   duration: string;
   location: string;
   companyWebsiteURL: string;
+  responsibilities?: string[];
 };
 
 export type Project = {

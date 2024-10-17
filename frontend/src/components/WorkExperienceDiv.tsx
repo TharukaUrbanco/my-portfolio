@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { WorkExperience } from "../types";
 
 type WorkExperienceDivProps = {
@@ -29,6 +30,12 @@ const WorkExperienceDiv = ({ experience }: WorkExperienceDivProps) => {
         <h5 className="text-[15px] dark-white text-left mt-2">
           {experience.designation}
         </h5>
+        <Link
+          to={`/experience/${experience.id}`}
+          className="text-orange-600 text-[14px] mt-1"
+        >
+          View more
+        </Link>
       </div>
     </div>
   );

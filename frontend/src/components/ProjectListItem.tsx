@@ -27,7 +27,7 @@ const ProjectListItem = ({ project }: ProjectListItemProps) => {
         </p>
         <div className="flex justify-start mt-2">
           <Link
-            to={`/project/${project.id}`}
+            to={`/projects/${project.id}`}
             className="light-orange hover:text-orange-700"
           >
             View more

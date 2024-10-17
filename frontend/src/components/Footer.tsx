@@ -3,7 +3,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#1c2541] flex flex-row justify-center px-8 pb-5 pt-10 items-center">
-      <span className="text-sm dark-white">
+      <span className="text-sm dark-white text-center">
         Copyright © {year} Tharuka Deshan All right reserved.
       </span>
     </footer>
