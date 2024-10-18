@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="flex h-screen common-margin-x">
+    <div className="flex common-margin-x">
       <div className="grid md:grid-cols-2">
         <div className="flex flex-col items-center justify-center">
           <img
