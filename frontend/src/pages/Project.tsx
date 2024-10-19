@@ -48,7 +48,10 @@ const Project = () => {
           <h2 className="text-[18px] mt-6 text-white">Technologies : </h2>
           <div className="flex flex-row flex-wrap text-[10px] mt-2 dark-white">
             {techSkills.map((r) => (
-              <div className="max-w-[200px] border border-gray-300 px-2 py-1 m-1 rounded-xl">
+              <div
+                className="max-w-[200px] border border-gray-300 px-2 py-1 m-1 rounded-xl"
+                key={r.id}
+              >
                 {r.name}
               </div>
             ))}
@@ -64,7 +67,7 @@ const Project = () => {
                 <div className="text-[14px] mt-2 dark-white">
                   <ul className="list-disc ml-4">
                     {project?.responsibilities?.map((r) => (
-                      <li>{r}</li>
+                      <li key={r}>{r}</li>
                     ))}
                   </ul>
                 </div>

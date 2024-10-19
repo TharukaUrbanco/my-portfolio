@@ -31,7 +31,7 @@ const Projects = () => {
           work and also free lancing.
         </p>
 
-        <div className="flex flex-row gap-2 mt-6">
+        <div className="flex flex-row gap-2 mt-6 flex-wrap justify-center">
           <ProjectFilteringBtn
             name="Work Related"
             selectedType={selectedType}
