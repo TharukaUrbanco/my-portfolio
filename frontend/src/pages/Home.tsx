@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className="flex common-margin-x">
@@ -40,9 +42,12 @@ const Home = () => {
             on new challenges. Feel free to reach out if you’d like to connect
             or discuss potential collaborations!
           </p>
-          <button className="px-10 py-3 rounded-3xl text-2xl text-center text-orange-500 border-[3px] w-[200px] border-orange-600 mt-8 mb-8">
+          <Link
+            to="/hire-me"
+            className="px-10 py-3 rounded-3xl text-2xl text-center text-orange-500 border-[3px] w-[200px] border-orange-600 mt-8 mb-8"
+          >
             Hire Me
-          </button>
+          </Link>
         </div>
       </div>
     </div>

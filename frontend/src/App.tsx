@@ -8,6 +8,7 @@ import Project from "./pages/Project";
 import Qualifications from "./pages/Qualifications";
 import ExperienceList from "./pages/ExperienceList";
 import Experience from "./pages/Experience";
+import Hireme from "./pages/Hireme";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/experience/:id" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<Project />} />
+        <Route path="/hire-me" element={<Hireme />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

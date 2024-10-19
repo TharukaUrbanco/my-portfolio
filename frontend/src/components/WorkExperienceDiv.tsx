@@ -16,7 +16,7 @@ const WorkExperienceDiv = ({ experience }: WorkExperienceDivProps) => {
       <div className="flex h-[120px] w-[120px] rounded-xl p-2 items-center bg-white">
         <a href={experience.companyWebsiteURL} target="_blank">
           <img
-            className="object-contain"
+            className="object-contain min-w-[100px]"
             src={`/images/companyLogos/${experience.id}.png`}
           />
         </a>
