@@ -1,11 +1,24 @@
 import { Link } from "react-router-dom";
-import { Project } from "../types";
+import { Project, WorkExperience } from "../types";
+import { workExperiences } from "../data/workExperiences";
+import { useEffect, useState } from "react";
 
 type ProjectListItemProps = {
   project: Project;
 };
 
 const ProjectListItem = ({ project }: ProjectListItemProps) => {
+  const [workExperience, setWorkExperience] = useState<WorkExperience>();
+
+  useEffect(() => {
+    if (project.relatedWorkExperienceId) {
+      const workExperienceInfo = workExperiences.find(
+        (r) => r.id == project.relatedWorkExperienceId
+      )!;
+      setWorkExperience(workExperienceInfo);
+    }
+  }, [project]);
+
   return (
     <div
       className="
@@ -21,7 +34,10 @@ const ProjectListItem = ({ project }: ProjectListItemProps) => {
       </div>
       <div className="flex flex-col justify-center p-2 ml-3">
         <h5 className="text-[18px] light-white text-left">{project.title}</h5>
-        <p className="text-[13px] -mt-1 dark-white">{project.duration}</p>
+        {workExperience && (
+          <p className="text-[13px] dark-white">{workExperience.companyName}</p>
+        )}
+        <p className="text-[13px] dark-white">{project.duration}</p>
 
         <div className="flex md:hidden max-h-[150px] max-w-[150px] rounded-xl p-2 mt-3 items-center bg-white">
           <img

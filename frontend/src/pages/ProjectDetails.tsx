@@ -1,25 +1,37 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
-import { useEffect } from "react";
-import { Skill } from "../types";
+import { useEffect, useState } from "react";
+import { Project, Skill, WorkExperience } from "../types";
 import { skills } from "../data/skills";
+import { workExperiences } from "../data/workExperiences";
 
-const Project = () => {
+const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = projects.find((r) => r.id === parseInt(id!));
 
-  let techSkills: Skill[] = [];
-  if (project !== undefined) {
-    techSkills = skills.filter((r) => project.techSkillIds.includes(r.id));
-  }
+  const [project, setProject] = useState<Project>();
+  const [workExperience, setWorkExperience] = useState<WorkExperience>();
+  const [techSkills, setTechSkills] = useState<Skill[]>();
 
   useEffect(() => {
-    if (project === undefined) {
+    const projectInfo = projects.find((r) => r.id === parseInt(id!));
+    setProject(projectInfo);
+    if (projectInfo === undefined) {
       return navigate("/not-found");
-      //
     }
-  }, [project, navigate]);
+
+    const techSkillsInfo = skills.filter((r) =>
+      projectInfo.techSkillIds.includes(r.id)
+    );
+    setTechSkills(techSkillsInfo);
+
+    if (projectInfo.relatedWorkExperienceId) {
+      const workExperienceInfo = workExperiences.find(
+        (r) => r.id == projectInfo.relatedWorkExperienceId
+      )!;
+      setWorkExperience(workExperienceInfo);
+    }
+  }, [navigate, project, id]);
 
   return (
     <div className="flex flex-col mt-4 common-margin-x">
@@ -28,6 +40,11 @@ const Project = () => {
         <div className="flex flex-col">
           {/* Project Name */}
           <h4 className="text-2xl dark-white">{project?.title}</h4>
+          {workExperience && (
+            <p className="text-[12px] dark-white">
+              {workExperience.companyName}
+            </p>
+          )}
           <span className="text-[12px] dark-white">{project?.duration}</span>
 
           {/* Project Image */}
@@ -45,17 +62,21 @@ const Project = () => {
           </p>
 
           {/* Technologies */}
-          <h2 className="text-[18px] mt-6 text-white">Technologies : </h2>
-          <div className="flex flex-row flex-wrap text-[10px] mt-2 dark-white">
-            {techSkills.map((r) => (
-              <div
-                className="max-w-[200px] border border-gray-300 px-2 py-1 m-1 rounded-xl"
-                key={r.id}
-              >
-                {r.name}
+          {techSkills && (
+            <>
+              <h2 className="text-[18px] mt-6 text-white">Technologies : </h2>
+              <div className="flex flex-row flex-wrap text-[10px] mt-2 dark-white">
+                {techSkills.map((r) => (
+                  <div
+                    className="max-w-[200px] border border-gray-300 px-2 py-1 m-1 rounded-xl"
+                    key={r.id}
+                  >
+                    {r.name}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
 
           {/* Roles and responsibilities */}
           {project?.responsibilities &&
@@ -80,4 +101,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectDetails;

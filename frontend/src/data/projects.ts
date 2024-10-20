@@ -7,31 +7,59 @@ export const projects: Project[] = [
     duration: "2022 November to Now",
     description:
       "Web Based System which manages all HDC Companies internal operations. This system consists with several \n" +
-      "modules such as HR, Payroll, Finance, Procurement, Project Management and Customer Service",
+      "modules such as Payroll, Finance, Procurement, Project Management and Customer Service.",
     type: "Work Related",
-    techSkillIds: [1, 2, 3],
+    techSkillIds: [1, 4, 8, 9, 11, 15, 17, 18],
     relatedWorkExperienceId: 4,
+    responsibilities: [
+      "Collaborating with the software team to deliver the feartures on time.",
+      "Coding and tesing",
+      "Bugs fixing.",
+    ],
   },
   {
     id: 2,
-    title: "HR and Payroll Management System",
+    title: "HR Management System ( HDC )",
+    duration: "2023 November to Now",
+    description:
+      "Web Based System which manages all HDC Companies HR related functionalities. Such as \n" +
+      "- Manage Employee Infomations ( Personal info, Job related info...) \n" +
+      "- Manage Employee Attendance \n" +
+      "- OT related functionalities \n" +
+      "- Leave related functionalities",
+    type: "Work Related",
+    techSkillIds: [1, 4, 8, 9, 11, 15, 17, 18],
+    relatedWorkExperienceId: 4,
+    responsibilities: [
+      "Collaborating with HR team and gather requirements.",
+      "Collaborating with the software team to deliver the feartures on time.",
+      "Coding and tesing.",
+      "Publishing to production.",
+      "Bugs fixing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 3,
+    title: "HR and Payroll Management System ( Alaris )",
     duration: "2019 to 2022 November",
     description:
       "Web Based System that helps to manage all Alaris Employee’s [ more than 500 ] HR related operations and payment related operations \n" +
       "Employees can view Attendance, request leaves, request OTs from their mobile phones. HR peoples can operate payroll related things.",
     type: "Work Related",
-    techSkillIds: [1, 4, 8, 9, 11, 15, 17],
-    relatedWorkExperienceId: 4,
+    techSkillIds: [1, 4, 8, 9, 15, 17],
+    relatedWorkExperienceId: 3,
     responsibilities: [
-      "Requirement gathering",
-      "Designing",
-      "Managing the software team",
-      "Coding",
-      "Testing and final publishing",
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Expenses and DCR Management System",
     duration: "2019 to 2022 November",
     description:
@@ -39,11 +67,19 @@ export const projects: Project[] = [
       "I implemented a web based mobile friendly system so representatives can upload their expenses bills and day to day works as well. \n" +
       "Sales & admin team can monitor expenses and approve their claims to Account team for bank transfer",
     type: "Work Related",
-    techSkillIds: [1, 2, 3],
+    techSkillIds: [1, 4, 8, 9, 15, 17],
     relatedWorkExperienceId: 3,
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Student Management System",
     duration: "2019 to now",
     description:
