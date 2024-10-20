@@ -160,4 +160,12 @@ export const skills: Skill[] = [
     type: "languages",
     years: 7,
   },
+  {
+    id: 24,
+    name: "Entity Framework",
+    rate: 98,
+    priority: 24,
+    type: "backend",
+    years: 7,
+  },
 ];

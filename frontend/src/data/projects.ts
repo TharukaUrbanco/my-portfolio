@@ -87,6 +87,110 @@ export const projects: Project[] = [
       "Currently more than 3000 students and 5 teachers using the system.\n" +
       "Maintaining central student databse and teacher wise their sucbjects are different. Teachers can maintain students attendance and Feed questions to system and generate automatic question papers. Students can login to system and answer the papers online and check the progress.",
     type: "Free Lancing",
-    techSkillIds: [1, 2, 3],
+    techSkillIds: [3, 24, 8, 9, 15, 16, 19],
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Bugs fixing and adding new features.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 6,
+    title: "Hospital Management System",
+    duration: "2021 to now",
+    description:
+      "Freelancer project for private hospital. This is Web based System for manage all operations in hospital such as \n" +
+      "- Manage Drugs stock. [ Hospital maintains drugs stock and all operation related to stock manage done with system ]\n" +
+      "- Maintain Patient History. [ All patient histories are managed through the system and Doctor can view patient histories by his mobile ]\n" +
+      "- Generate Bills. [ All Medical Bills Issued through the system ] \n" +
+      "- Generate Lab Repots. [ Feed input data and generate related lab report and easily send to customer ]",
+    type: "Free Lancing",
+    techSkillIds: [3, 24, 8, 9, 15, 16, 19],
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Bugs fixing and adding new features.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 7,
+    title: "Stock Management System",
+    duration: "2020 to 2022 November",
+    description:
+      "This is a web based system and issue stock items according to expiry date. Generate dispatch note when stock move out from stores based on invoice. Managers can easily check stock availability using their mobile phones through the system. \n",
+    type: "Work Related",
+    techSkillIds: [1, 4, 8, 9, 15, 17],
+    relatedWorkExperienceId: 3,
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 8,
+    title: "Vehicle Management System",
+    duration: "2019 to 2022 November",
+    description:
+      "Web Based System that helps to manage all Alaris employee’s [ more than 500 ] payment related transactions like monthly salary, expenses advances of employees, incentives, insurance and expenses claims. \n" +
+      "This system fully interconnected with HRM System. Such as HR people can hold employee’s money transactions then payroll system detect those transactions and hold them.",
+    type: "Work Related",
+    techSkillIds: [1, 4, 8, 9, 15, 17],
+    relatedWorkExperienceId: 3,
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 9,
+    title: "My portfolio website",
+    duration: "2024 October to now",
+    description:
+      "The goal of this portfolio website is to showcase my work, skills, and achievements in a professional and visually appealing manner. \n" +
+      "This is fully responsive mobile friendly website built on react.\n",
+    type: "Education Purpose",
+    techSkillIds: [7, 19, 15],
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
+  },
+  {
+    id: 10,
+    title: "Passmrcpch website",
+    duration: "2024 January to now",
+    description:
+      "The client of this system is a consultant who is doing online courses for medical students. So he wanted a website to market his courses and give students to freely access some course materials also. \n" +
+      "Website is customizable and has given admin panel to update its content. \n" +
+      "This is fully responsive mobile friendly system built with .Net MVC Core.\n" +
+      "You can visit this site on http://passmrcpch.com",
+    type: "Free Lancing",
+    techSkillIds: [1, 4, 8, 9, 11, 15, 17, 18],
+    responsibilities: [
+      "Requirement gathering.",
+      "Designing.",
+      "Managing the software team.",
+      "Coding.",
+      "Testing and final publishing.",
+      "Preforming training, demonstration to present features of software to end users.",
+    ],
   },
 ];
