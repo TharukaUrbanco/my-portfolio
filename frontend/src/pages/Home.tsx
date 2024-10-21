@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className="text-[10px] text-white">( ASP.Net / React )</div>
             <div className="text-[10px] text-white mt-2">
-              BSc in Computer Science (USCS)
+              BSc in Computer Science (UCSC)
             </div>
           </div>
         </div>
