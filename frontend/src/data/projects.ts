@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "ERP System",
     duration: "2022 November to Now",
     description:
-      "ERP System is a powerful, web-based platform designed to centralize and streamline all internal operations across" +
+      "ERP System is a powerful, web-based platform designed to centralize and streamline all internal operations across " +
       "Housing Development Cooperation in Maldives. This comprehensive system is comprised of multiple integrated modules that facilitate the efficient management of essential business functions.\n" +
       "Key modules include: \n\n" +
       "- HR Module : \n" +
@@ -26,8 +26,8 @@ export const projects: Project[] = [
     techSkillIds: [1, 4, 8, 9, 11, 15, 17, 18],
     relatedWorkExperienceId: 4,
     responsibilities: [
-      "Collaborating with the software team to deliver the feartures on time.",
-      "Coding and tesing",
+      "Collaborating with the software team to deliver the features on time.",
+      "Coding and testing",
       "Bugs fixing.",
     ],
   },
@@ -55,8 +55,8 @@ export const projects: Project[] = [
     relatedWorkExperienceId: 4,
     responsibilities: [
       "Collaborating with HR team and gather requirements.",
-      "Collaborating with the software team to deliver the feartures on time.",
-      "Coding and tesing.",
+      "Collaborating with the software team to deliver the features on time.",
+      "Coding and testing.",
       "Publishing to production.",
       "Bugs fixing.",
       "Preforming training, demonstration to present features of software to end users.",
